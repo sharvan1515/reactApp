@@ -23,7 +23,7 @@ function App() {
 					<ScrollToTop />
 					<Suspense fallback={<div>Loading...</div>}>
 						<Header />
-						<main className="container">
+						<main className="">
 							<Routes>
 								{routes.map((route, index) => (
 									<Route key={index} path={route.path} element={<route.component />} />
