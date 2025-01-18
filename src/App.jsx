@@ -21,7 +21,10 @@ function App() {
 			<ThemeProvider> {/* Provide Theme Context */}
 				<Router>
 					<ScrollToTop />
-					<Suspense fallback={<div>Loading...</div>}>
+					<Suspense fallback={<div className="flex justify-center items-center">
+						{/* Tailwind CSS spinner */}
+						<div className="w-16 h-16 border-4 border-t-4 border-blue-500 border-solid rounded-full animate-spin"></div>
+					</div>}>
 						<Header />
 						<main className="">
 							<Routes>
